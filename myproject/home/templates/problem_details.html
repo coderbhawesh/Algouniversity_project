@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{ problems.name }}</title>
+    <h3>{{problem.difficulty}}</h3>
+</head>
+
+<body>
+    <h1>{{ problems.name}}</h1>
+
+    <p>{{ problems.statement }}</p>
+    <a href="{% url 'ProblemDisplay' %}">Back to Problems List</a>
+    <br></br>
+    <form action="/submit">
+        <input type="submit" value="Submit problem" />
+    </form>
+
+
+
+
+</body>
+
+</html>

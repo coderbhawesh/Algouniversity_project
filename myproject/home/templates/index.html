@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Problems List</title>
+</head>
+
+<body>
+    <h1>Problems</h1>
+    <ul>
+        {% for problem in problems %}
+        <li><a href="/home/{{problem.id}}/">{{ problem.name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+
+<form action="/submit">
+    <input type="submit" value="Custom compiler" />
+</form>
+
+
+
+</html>
