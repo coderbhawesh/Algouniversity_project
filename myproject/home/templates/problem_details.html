@@ -2,19 +2,25 @@
 <html>
 
 <head>
-    <title>{{ problems.name }}</title>
+    <title >{{ problems.name }}</title>
     <h3>{{problem.difficulty}}</h3>
 </head>
 
-<body>
-    <h1>{{ problems.name}}</h1>
-
+<body style="background-color:cornsilk">
+    <h1 style="text-align:center;">{{ problems.name}}</h1>
+    <h2>Problem ID for submission : {{problems.id}}</h2>
     <p>{{ problems.statement }}</p>
-    <a href="{% url 'ProblemDisplay' %}">Back to Problems List</a>
-    <br></br>
-    <form action="/submit">
-        <input type="submit" value="Submit problem" />
+    <h3>Sample input</h3>
+    <p>{{problems.sample_input}}</p>
+    <h3>Sample output</h3>
+    <p>{{problems.sample_output}}</p>
+   
+    
+    <form action="/submit/code" style="text-align:center;">
+        <input type="submit" value="Submit" />
     </form>
+    <br>
+    <a href="{% url 'ProblemDisplay' %}">Back to Problems List</a>
 
 
 

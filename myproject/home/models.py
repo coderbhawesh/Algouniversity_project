@@ -7,6 +7,8 @@ class problem(models.Model):
     name = models.CharField(max_length=50)
     statement = models.CharField(max_length=1000)
     difficulty = models.CharField(max_length=50, default="Easy")
+    sample_input = models.CharField(max_length=50,null=True)
+    sample_output = models.CharField(max_length=50,null=True)
     
 class Solution(models.Model):
     problem = models.ForeignKey(problem, on_delete=models.CASCADE)

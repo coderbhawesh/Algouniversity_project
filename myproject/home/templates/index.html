@@ -5,11 +5,13 @@
     <title>Problems List</title>
 </head>
 
-<body>
-    <h1>Problems</h1>
+<body style="background-color:cornsilk">
+    <h1 style="text-align:center;">Problems </h1>
+    <h3>List of the problems :</h3>
     <ul>
         {% for problem in problems %}
-        <li><a href="/home/{{problem.id}}/">{{ problem.name }}</a></li>
+        <li>{{problem.id}} &nbsp;<a href="/home/{{problem.id}}/">{{ problem.name }}</a> &nbsp;&nbsp;&nbsp; : &nbsp;{{problem.difficulty}}</li>
+        <br>
         {% endfor %}
     </ul>
 </body>
