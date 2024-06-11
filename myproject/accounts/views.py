@@ -40,13 +40,14 @@ def login_user(request):
             return redirect('/auth/login/')
 
         user = authenticate(username=username, password=password)
+        user.save()
 
         if user is None:
             messages.info(request, 'invalid password')
             return redirect('/auth/login')
 
         login(request, user)
-        messages.info(request, 'login successful')
+        messages.info(request, f'login successful as {username}')
 
         return redirect('/home')
 

@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from home.models import problem
 from django.template import loader
 from django.http import HttpResponse
+from django.contrib.auth.models import User
 
 # Create your views here.
 
