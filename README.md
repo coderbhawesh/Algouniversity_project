@@ -76,7 +76,7 @@ This project is an Online Judge system built using Django. It allows users to re
 
 ## Demo
 
-Video link of my project : (Link) : https://www.loom.com/share/b279231e09a8444b97db747b46ccc339?sid=9cbc2019-cdd1-47ed-ad97-b1cbd5a95601
+Video link of my project : (Link) : https://www.loom.com/share/074243364420460b9a84ea216153aba0
 
 
 
